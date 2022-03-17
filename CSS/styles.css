@@ -1,0 +1,35 @@
+:root {
+    --bg-color: #26233a;
+    --accent-color: #eb6f92;
+    --text-color: #e0def4;
+    --darker-bg: #191724;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);    
+    color: var(--text-color);
+    font-family: Consolas, sans-serif;
+}
+
+footer {
+    padding: 50px 20px 50px 20px;
+    background-color: var(--darker-bg);
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+} 
+
