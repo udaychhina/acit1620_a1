@@ -17,10 +17,15 @@ body {
     font-family: Consolas, sans-serif;
 }
 
+h3 {
+    color: var(--accent-color);
+}
+
 /* HEADER AREA */
 
 header {
-    background-image: linear-gradient(to top, var(--bg-color), var(--darker-bg));
+    background-color: var(--darker-bg);
+    /* background-image: linear-gradient(to top, var(--bg-color), var(--darker-bg)); */
     position: sticky;
     top: 0px;
     height: 5rem;
@@ -29,14 +34,16 @@ header {
     align-items: center;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 a {
+    font-weight: bold;
     color: var(--text-color);
     text-decoration: none;
-} 
+}
+
+a:hover {
+    color: var(--accent-color);
+}
 
 /* MAIN AREA */
 
@@ -56,16 +63,11 @@ main {
 .main-content {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-content:hover {
-    background-color: var(--darker-bg);
-}
-.sidebar:hover {
-    background-color: var(--darker-bg);
-}
 
 .sidebar-opened {
     display: flex;
@@ -90,6 +92,10 @@ button {
     border-radius: 0.5rem;
 }
 
+button:hover {
+    box-shadow: 0px 0px 5px white;
+}
+
 /* FOOTER AREA */
 
 footer {
@@ -99,7 +105,8 @@ footer {
     position: fixed;
     bottom: 0px;
     height: 10rem;
-    background-image: linear-gradient(to bottom, var(--bg-color), var(--darker-bg));
+    background-color: var(--darker-bg);
+    /* background-image: linear-gradient(to bottom, var(--bg-color), var(--darker-bg)); */
     width: 100%;
     line-height: 1.2;
 }
@@ -116,6 +123,7 @@ footer {
 
     main {
         flex-direction: row;
+        height: calc(100vh - 10rem);
     }
     .sidebar {
         flex-grow: 0;
@@ -132,6 +140,57 @@ footer {
     }
 
     .sidebar-opened {
+        width: 200px;
+        background-color: var(--darker-bg);
+        /* background-image: linear-gradient(to right, var(--darker-bg), var(--bg-color)); */
         flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
+
+    .sidebar-opened button {
+        margin: 1rem 1rem 0 1rem;
+        align-self: flex-end;
+    }
+
+    .sidebar-opened li {
+        list-style-type: none;
+    }
+
+    .sidebar-opened h3,
+    .sidebar-opened ul {
+        margin-top: 1rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content:hover {
+        background-color: var(--bg-color);
+    }
+
+    textarea {
+        text-align: left;
+        border: none;
+        background-color: var(--darker-bg);
+        color: var(--text-color);
+        font-family: Consolas;
+    }
+
+    .main-content h3 {
+        margin-bottom: 1rem;
+    }
+
+    .note-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    } 
+
+    .note-buttons button {
+        margin: 1rem 1rem 1rem 0;
+    }
+
 }
