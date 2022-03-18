@@ -104,7 +104,9 @@ footer {
     line-height: 1.2;
 }
 
-@media screen and (min-width: 399px) {
+/* STYLING FOR BIGGER DISPLAYS */
+
+@media screen and (min-width: 450px) {
     header {
         justify-content: flex-end;
     }
@@ -114,5 +116,22 @@ footer {
 
     main {
         flex-direction: row;
+    }
+    .sidebar {
+        flex-grow: 0;
+        display: block;
+        width: max-content;
+    }
+
+    .sidebar button {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    footer {
+        height: 5rem;
+    }
+
+    .sidebar-opened {
+        flex-grow: 0;
     }
 }
