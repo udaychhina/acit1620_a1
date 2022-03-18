@@ -15,37 +15,25 @@ body {
     background-color: var(--bg-color);    
     color: var(--text-color);
     font-family: Consolas, sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 /* HEADER AREA */
 
 header {
+    background-image: linear-gradient(to top, var(--bg-color), var(--darker-bg));
     position: sticky;
     top: 0px;
-    padding: 15px;
-}
-ul {
+    height: 5rem;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-li {
-    background-color: var(--accent-color);
-    list-style-type: none;
-    padding: 8px 20px 8px 20px;
-    border-radius: 0.5rem;
+a:hover {
+    text-decoration: underline;
 }
-
-li:hover {
-    box-shadow: 0px 0px 5px white;
-}
-
 
 a {
-    display: block;
-    width: 100%;
     color: var(--text-color);
     text-decoration: none;
 } 
@@ -55,23 +43,46 @@ a {
 main {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 15rem);
 }
 
 .sidebar {
-    height: 100px;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-content {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.main-content:hover {
+    background-color: var(--darker-bg);
+}
+.sidebar:hover {
+    background-color: var(--darker-bg);
+}
+
+.sidebar-opened {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.sidebar-opened:hover {
+    background-color: var(--darker-bg);
+
+}
+
 button {
+    font-weight: bold;
     background-color: #eb6f92;
     color: var(--text-color);
     border: none;
@@ -82,13 +93,26 @@ button {
 /* FOOTER AREA */
 
 footer {
-    padding: 50px 20px 50px 20px;
-    background-color: var(--darker-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0px;
-    text-align: center;
+    height: 10rem;
+    background-image: linear-gradient(to bottom, var(--bg-color), var(--darker-bg));
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 1.2;
+}
+
+@media screen and (min-width: 399px) {
+    header {
+        justify-content: flex-end;
+    }
+    header a {
+        margin-right: 2rem;
+    }
+
+    main {
+        flex-direction: row;
+    }
 }
