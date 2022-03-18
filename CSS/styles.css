@@ -201,6 +201,10 @@ footer {
         border: none;
     }
 
+    textarea::placeholder {
+        color: var(--text-color);
+    }
+
     .main-content h3 {
         margin-bottom: 1rem;
     }
