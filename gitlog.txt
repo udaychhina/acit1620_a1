@@ -1,0 +1,112 @@
+commit 62b260bdad4280df25021079ada049f99fda08f9
+Author: uday <udaychhina1337@gmail.com>
+Date:   Mon Mar 21 11:09:31 2022 -0700
+
+    fixed error: changed h3 to button for new note in note.html
+
+ CSS/styles.css | 1 +
+ note.html      | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 63e818ffab02665405ffb0a34883b795b3268354
+Author: uday <udaychhina1337@gmail.com>
+Date:   Fri Mar 18 12:26:50 2022 -0700
+
+    fixed text area placeholder not showing
+
+ CSS/styles.css | 4 ++++
+ note.html      | 3 +--
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit c2af43b569d7f8a6ad02327860c63c86bac0e53b
+Author: uday <udaychhina1337@gmail.com>
+Date:   Fri Mar 18 12:03:09 2022 -0700
+
+    added google fonts
+
+ CSS/styles.css | 5 ++---
+ index.html     | 5 ++++-
+ note.html      | 6 ++++--
+ 3 files changed, 10 insertions(+), 6 deletions(-)
+
+commit d063836cdadbc86ee37502f39989dcffe8daec98
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 22:32:52 2022 -0700
+
+    moved readme file
+
+ CSS/README.md => README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0a945d32617e09d2d5c09c3df9ff15db08720f40
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 22:29:42 2022 -0700
+
+    added styling for mobile pages
+
+ CSS/styles.css | 41 ++++++++++++++++++++++++++++++++---------
+ index.html     |  2 +-
+ 2 files changed, 33 insertions(+), 10 deletions(-)
+
+commit bdd35226c3223d580898f59bab6a453ef1a4c348
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 18:46:44 2022 -0700
+
+    added styling for desktop pages
+
+ CSS/styles.css | 83 +++++++++++++++++++++++++++++++++++++++++++++++++---------
+ index.html     |  3 +--
+ note.html      | 23 +++++++++++++---
+ 3 files changed, 91 insertions(+), 18 deletions(-)
+
+commit cb2af0953a8d26103544bbbc40bf50e7667107e5
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 18:10:52 2022 -0700
+
+    completed index.html desktop display
+
+ CSS/styles.css | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+commit 7b7efeda6e1a134c048056b57276358f149d04c7
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 17:56:54 2022 -0700
+
+    completed index.html phone display
+
+ CSS/styles.css | 72 ++++++++++++++++++++++++++++++++++++++--------------------
+ index.html     | 17 ++++++--------
+ note.html      | 21 +++++++++++++++++
+ 3 files changed, 76 insertions(+), 34 deletions(-)
+
+commit 1fb4be15d5f9e58066cf816b63e9ed6fbd0c8a8f
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 16:49:52 2022 -0700
+
+    added readme.md, added further styling to links and footer
+
+ CSS/README.md  |  7 ++++++
+ CSS/styles.css | 73 ++++++++++++++++++++++++++++++++++++++++++++++++++++------
+ index.html     | 12 +++++-----
+ 3 files changed, 79 insertions(+), 13 deletions(-)
+
+commit 153758f38eb110c2fd2e7f0c6c1707a5c203e37a
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 15:53:43 2022 -0700
+
+    changed fonts, added main colors
+
+ CSS/styles.css | 35 +++++++++++++++++++++++++++++++++++
+ index.html     | 23 ++++++++++++++++++++---
+ 2 files changed, 55 insertions(+), 3 deletions(-)
+
+commit bf32c5dded86cb525f01daafba74dad55f03023e
+Author: uday <udaychhina1337@gmail.com>
+Date:   Thu Mar 17 15:22:10 2022 -0700
+
+    added the starter files for assignment 1
+
+ CSS/styles.css |  0
+ index.html     | 26 ++++++++++++++++++++++++++
+ note.html      | 23 +++++++++++++++++++++++
+ 3 files changed, 49 insertions(+)
