@@ -1,3 +1,24 @@
+commit 8348de90ce8cdbd2672e4b08258ecf7bd0c4e6f1
+Author: uday <udaychhina1337@gmail.com>
+Date:   Tue Mar 22 12:34:11 2022 -0700
+
+    changed section tag to nav tag as required
+
+ index.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 25397d5d54dfd57bd0ed14a3bcbad8ee73b7b364
+Author: uday <udaychhina1337@gmail.com>
+Date:   Tue Mar 22 12:10:06 2022 -0700
+
+    changed section tag to nav tag as required
+
+ gitlog.txt  | 112 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ gitlog1.png | Bin 0 -> 98219 bytes
+ gitlog2.png | Bin 0 -> 94135 bytes
+ note.html   |   4 +--
+ 4 files changed, 114 insertions(+), 2 deletions(-)
+
 commit 62b260bdad4280df25021079ada049f99fda08f9
 Author: uday <udaychhina1337@gmail.com>
 Date:   Mon Mar 21 11:09:31 2022 -0700
